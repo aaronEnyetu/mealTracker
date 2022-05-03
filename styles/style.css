@@ -61,12 +61,6 @@ header {
     box-shadow: var(--shadow);
 }
 
-
-h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
 .gutter-right {
     margin-right: 20px;
 }
@@ -78,7 +72,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+ 
 footer {
     position: fixed;
     width: 100%;
