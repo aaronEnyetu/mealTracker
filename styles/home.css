@@ -42,3 +42,11 @@ label {
     background: burlywood;
     border: 2px solid #333;
 }
+.meals-report {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    width: 700px;
+    background: burlywood;
+    border: 2px solid #333;
+}
