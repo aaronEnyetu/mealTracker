@@ -34,3 +34,11 @@ label {
     font-weight: bold;
 
 }
+.meals {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    width: 700px;
+    background: burlywood;
+    border: 2px solid #333;
+}

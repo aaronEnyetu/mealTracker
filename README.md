@@ -52,7 +52,7 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 ####Add Ingredients Section###
 #Event(s)
 -Add ingredient (form submit)
-- Remove last Item (Button click)
+- Remove last Item (Button clickDesin)
 ####Save Meal Events####
 #Event(s)
 *save button click
