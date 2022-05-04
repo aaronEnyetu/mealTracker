@@ -3,10 +3,12 @@ import { renderIngredient } from './utils.js';
 const form = document.getElementById('add-ingredient');
 const ingredientsList = document.getElementById('ingredients-list');
 
+const remove = document.getElementById('remove');
+
 // let state
 let ingredientsArray = [];
 
-//Impure render functions
+
 
 //function resetIngredients() {
   //  ingredients = [];
@@ -37,9 +39,16 @@ form.addEventListener('submit', (e) => {
     renderIngredients();
     
 
-  
-
 });
+
+//code to allow users to remove the recent ingredient
+remove.addEventListener('click', () => {
+    ingredientsArray.pop();
+    renderIngredients();
+});
+
+//Impure render functions
+
 function renderIngredients() {
     ingredientsList.textContent = '';
     for (let item of ingredientsArray) {
