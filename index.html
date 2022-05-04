@@ -21,45 +21,71 @@
     <main>
         <section class="main-section">
             <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
+            <h1>
+                Welcome to the Ingredient Tracker!
+            </h1>
+            <section>
+                
+                <div class="ingredients">
+                    
+                    <form id="add-ingredient"> 
+                        <h2>Add Ingredients</h2>
+                    <label>
+                        Ingredient:
+                        <input type="text" name="ingredient" id="ingredient"/>
+                    </label> 
+                    <label>
+                        Quantity:
+                        <input type="number" name="quantity" id="quantity"/>
+                    </label>
+                    <label>
+                        Measurement: 
+                        <select id="measurement" name="measurement">
+                            <option value="Cups">Cups</option>
+                            <option value="Grams">Grams</option>
+                            <option value="Milliliter">Milliliter</option>
+                            <option value="Teaspoon">Teaspoons</option>
+                            <option value="Tablespoon">Tablespoons</option>
+                        </select>
+                    </label>
+                    <button type="submit">Add Ingredient</button>
+                    </form>
+                    
+                        <div class="ingredients-list">
+                            <ul id="ingredients-list"></ul>
+                            <button id="remove">Remove Last Item</button>
+                        </div>
+                    
+                    
+                </div>
+                <div class="meals">
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
+                    <form id="add-meal">
+                        <h3>Save Meal</h3>
+                        <label>
+                            Meal Name
+                            <input type="text" placeholder="Recipe Name" id="meal-input"/>
+                        </label>
+                       
+                        
+                    </form>
+                    <div><button id="save-meal">Save Meal </button></div>
+                </div> 
+                
+                
+                    <section>
+                        <div class="meals-report"></div>
+                        <h4>Recipe for Your Meals</h4>
+                        <ul id ="meal-report"></ul>
+                    </section>
+                        
+                        
+                    
+                </div>
+            </section>
+                   
+
+            
 
         </section>
     </main>
